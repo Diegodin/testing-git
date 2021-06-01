@@ -1,0 +1,128 @@
+body{
+    background:rgba(171, 175, 175, 0.966) ;
+    font-family: 'Courier New', monospace;
+}
+nav{
+    background: rgb(191, 197, 197);
+    padding: 10 px;
+    display: flex;
+    justify-content:flex-end;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background: rgb(231, 235, 238);
+}
+h1:hover{
+    color: rgb(172, 22, 44);
+}
+.up{
+    display: inline-block;
+    background: rgb(241, 235, 235);
+    color: rgb(3, 3, 3);
+    padding: 20px 50px;
+    margin: 20px 10px;
+    text-decoration: none;
+    border: 1px solid black;
+    
+}
+
+.up:hover{
+    background: rgb(216, 26, 58);
+}
+
+.nav-button{
+    background: rgba(253, 253, 253, 0.712);
+    color: rgb(8, 8, 8);
+    padding: 20px 50px;
+    margin: 20px 10px;
+    border: 2px solid white;
+    display: none;
+}
+.nav-button:hover{
+    background-color: rgb(172, 22, 44);
+}
+
+.inicio{
+    background: none;
+    margin: 0% 45%;
+    /* margin-left: 50px;
+    padding: 40px 0px 0px 0px;
+    padding-right: 0px; */
+    font-size: 50px;
+    border: none;
+}
+
+.inicio:hover{
+    background: none;
+    display: flex;
+    color: rgb(190, 29, 53);
+}
+
+.recuadro{
+    background: rgb(245, 242, 242);
+    color: rgb(0, 0, 0);
+    padding: 100px;
+    margin: 20px 10px;
+    text-decoration: none;
+    box-shadow:5px 5px 10px rgb(97, 94, 94);
+    border: 1px solid black;
+}
+
+
+@media (max-width: 600px) {
+    nav{
+        flex-direction: column;
+    }
+
+    .up{
+        margin: 20px 20px;
+    }
+
+    .nav-button{
+        display: inline-block;
+    }
+
+    .desaparece{
+        display: none;
+    }
+
+    .inicio{
+        background: none;
+        display: none;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    .recuadro{
+        padding: 50px;
+    }
+}
+
+@media(max-width: 1635px){
+    nav{
+        justify-content:space-around;
+    }
+
+    .inicio{
+        display: none;
+    }
+}
+
+@media(max-width: 1419px){
+    nav{
+        justify-content:space-around;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    .inicio{
+        display: none;
+    }
+}
